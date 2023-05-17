@@ -7,6 +7,7 @@ import Props from './components/Props'
 import React_icons from './components/React_icons'
 import STATE from './STATE'
 import Index from './Conditional_rendering/index'
+import Event from './Event_Handling/event'
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
       <STATE />
 
       <Index />
+
+      <Event />
       
     </>
   )
