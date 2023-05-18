@@ -8,6 +8,8 @@ import React_icons from './components/React_icons'
 import STATE from './STATE'
 import Index from './Conditional_rendering/index'
 import Event from './Event_Handling/event'
+import SetState from './Hooks/setState'
+import Hook_useState from './Hooks/Hooks_useState'
 
 function App() {
 
@@ -36,6 +38,10 @@ function App() {
       <Index />
 
       <Event />
+
+      <SetState />
+
+      <Hook_useState />
       
     </>
   )
