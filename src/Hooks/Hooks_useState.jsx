@@ -3,8 +3,13 @@ import React,{useState} from 'react'
 function Hooks_useState() {
 
   const [count, setCount] = useState(0)
-  const handleIncrement = () => {
-    setCount(count + 1);
+  const handleIncrement = (event) => {
+    event.stopPropagation()
+    // Its recomende to changes the value by selecting the previous value
+    setCount((count)=> count + 1);
+    
+    // the preValue is main value from count, always it will take previous value and will add next value 
+    setCount((preValue)=> preValue + 1);
   }
 
   return (
