@@ -10,6 +10,7 @@ import Index from './Conditional_rendering/index'
 import Event from './Event_Handling/event'
 import SetState from './Hooks/setState'
 import Hook_useState from './Hooks/Hooks_useState'
+import Form from './Form/Form'
 
 function App() {
 
@@ -25,23 +26,19 @@ function App() {
   return (
     <>
     
-      <Custom_js_css_add />
-      <Card />
-      
+      {/* <Custom_js_css_add />
+      <Card /> */}
       {/* index is for unique key */}
-      {Data.map((item, index) => <Props key={index} nameText={item.name} homeText={item.home} />)}
-
+      {/* {Data.map((item, index) => <Props key={index} nameText={item.name} homeText={item.home} />)}
       <React_icons />
       <hr className='mt-4' />
       <STATE />
-
       <Index />
-
       <Event />
-
       <SetState />
+      <Hook_useState /> */}
 
-      <Hook_useState />
+      <Form />
       
     </>
   )
