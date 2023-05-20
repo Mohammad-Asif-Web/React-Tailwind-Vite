@@ -2,3 +2,6 @@
 .formGroup{
     margin: 20px 0;
 }
+.formGroup input{
+    margin-left: 20px;
+}
