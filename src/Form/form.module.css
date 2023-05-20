@@ -1,6 +1,8 @@
 
 .formGroup{
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .formGroup input{
     margin-left: 20px;

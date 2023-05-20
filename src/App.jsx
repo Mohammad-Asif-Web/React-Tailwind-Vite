@@ -11,6 +11,7 @@ import Event from './Event_Handling/event'
 import SetState from './Hooks/setState'
 import Hook_useState from './Hooks/Hooks_useState'
 import Form from './Form/Form'
+import Child from './State_Lifting/Child_to_perent_data'
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
 
   //2. json data sending to Props component by map()
   // items = Data.map(item => <Props nameText={item.name} homeText={item.home} />)
+  const getChildData = (data)=>{
+    console.log(data);
+  }
 
   return (
     <>
@@ -37,8 +41,8 @@ function App() {
       <Event />
       <SetState />
       <Hook_useState /> */}
-
-      <Form />
+      {/* <Form /> */}
+      <Child onChildData={getChildData} />
       
     </>
   )
