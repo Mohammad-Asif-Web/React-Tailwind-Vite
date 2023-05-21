@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Custom_js_css_add from './components/custom_js_css_add'
 import './components/Custom_js_css.css'
@@ -12,6 +13,11 @@ import SetState from './Hooks/setState'
 import Hook_useState from './Hooks/Hooks_useState'
 import Form from './Form/Form'
 import Child from './State_Lifting/Child_to_perent_data'
+import Home from './router/Home'
+import About from './router/About'
+import Error from './router/Error'
+import Navbar from './router/Navbar'
+
 
 function App() {
 
@@ -29,7 +35,14 @@ function App() {
 
   return (
     <>
-    
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
       {/* <Custom_js_css_add />
       <Card /> */}
       {/* index is for unique key */}
@@ -42,7 +55,7 @@ function App() {
       <SetState />
       <Hook_useState /> */}
       {/* <Form /> */}
-      <Child onChildData={getChildData} />
+      {/* <Child onChildData={getChildData} /> */}
       
     </>
   )
