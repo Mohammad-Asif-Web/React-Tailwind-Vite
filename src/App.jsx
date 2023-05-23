@@ -17,6 +17,8 @@ import Home from './router/Home'
 import About from './router/About'
 import Error from './router/Error'
 import Navbar from './router/Navbar'
+import Blogs from './router/Blogs'
+import Blog from './router/Blog'
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
     <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:home' element={<Blog />} />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
       </Routes>
