@@ -11,6 +11,7 @@ import Index from './Conditional_rendering/index'
 import Event from './Event_Handling/event'
 import SetState from './Hooks/setState'
 import Hook_useState from './Hooks/Hooks_useState'
+import UseEffect from './Hooks/UseEffect'
 import Form from './Form/Form'
 import Child from './State_Lifting/Child_to_perent_data'
 import Home from './router/Home'
@@ -19,7 +20,8 @@ import Error from './router/Error'
 import Navbar from './router/Navbar'
 import Blogs from './router/Blogs'
 import Blog from './router/Blog'
-
+import UseReducer from './Hooks/UseReducer'
+import ContextApi from './ContextAPI/ContextApi'
 
 function App() {
 
@@ -31,13 +33,13 @@ function App() {
 
   //2. json data sending to Props component by map()
   // items = Data.map(item => <Props nameText={item.name} homeText={item.home} />)
-  const getChildData = (data)=>{
-    console.log(data);
-  }
+  // const getChildData = (data)=>{
+  //   console.log(data);
+  // }
 
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -46,18 +48,21 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
       {/* <Custom_js_css_add />
       <Card /> */}
       {/* index is for unique key */}
-      {/* {Data.map((item, index) => <Props key={index} nameText={item.name} homeText={item.home} />)}
-      <React_icons />
-      <hr className='mt-4' />
-      <STATE />
-      <Index />
-      <Event />
-      <SetState />
-      <Hook_useState /> */}
+      {/* {Data.map((item, index) => <Props key={index} nameText={item.name} homeText={item.home} />)} */}
+      {/* <React_icons /> */}
+      {/* <hr className='mt-4' /> */}
+      {/* <STATE /> */}
+      {/* <Index /> */}
+      {/* <Event /> */}
+      {/* <SetState /> */}
+      {/* <Hook_useState />  */}
+      {/* <UseEffect /> */}
+      {/* <UseReducer /> */}
+      {/* <ContextApi /> */}
       {/* <Form /> */}
       {/* <Child onChildData={getChildData} /> */}
       
