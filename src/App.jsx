@@ -24,6 +24,7 @@ import UseReducer from './Hooks/UseReducer'
 import ContextApi from './ContextAPI/ContextApi'
 import UseContext from './UseContext/UseContext'
 import UseMemo from './UseMemo/UseMemo'
+import Axios from './Axios/Axios'
 
 function App() {
 
@@ -66,7 +67,8 @@ function App() {
       {/* <UseReducer /> */}
       {/* <ContextApi /> */}
       {/* <UseContext /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      <Axios />
       {/* <Form /> */}
       {/* <Child onChildData={getChildData} /> */}
       
