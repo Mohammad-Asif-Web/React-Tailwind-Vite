@@ -22,6 +22,8 @@ import Blogs from './router/Blogs'
 import Blog from './router/Blog'
 import UseReducer from './Hooks/UseReducer'
 import ContextApi from './ContextAPI/ContextApi'
+import UseContext from './UseContext/UseContext'
+import UseMemo from './UseMemo/UseMemo'
 
 function App() {
 
@@ -63,6 +65,8 @@ function App() {
       {/* <UseEffect /> */}
       {/* <UseReducer /> */}
       {/* <ContextApi /> */}
+      {/* <UseContext /> */}
+      <UseMemo />
       {/* <Form /> */}
       {/* <Child onChildData={getChildData} /> */}
       
